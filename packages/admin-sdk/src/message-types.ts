@@ -6,7 +6,7 @@ import type {
   contextEnvironment,
   contextLocale,
   contextCurrency,
-  contextShopwareVersion,
+  contextAllinpanelVersion,
   contextAppInformation,
   contextModuleInformation,
   contextUserInformation,
@@ -44,10 +44,10 @@ import type {
 import type { iapCheckout } from './iap';
 
 /**
- * Contains all shopware send types.
+ * Contains all allinpanel send types.
  * @internal
  */
-export interface ShopwareMessageTypes {
+export interface AllinpanelMessageTypes {
   notificationDispatch: notificationDispatch,
   toastDispatch: toastDispatch,
   windowRedirect: windowRedirect,
@@ -58,12 +58,12 @@ export interface ShopwareMessageTypes {
   contextEnvironment: contextEnvironment,
   contextLocale: contextLocale,
   contextCurrency: contextCurrency,
-  contextShopwareVersion: contextShopwareVersion,
+  contextAllinpanelVersion: contextAllinpanelVersion,
   contextUserInformation: contextUserInformation,
   contextUserTimezone: contextUserTimezone,
   contextAppInformation: contextAppInformation,
   contextModuleInformation: contextModuleInformation,
-  contextShopId: contextShopId
+  contextShopId: contextShopId,
   getPageTitle: getPageTitle,
   uiComponentSectionRenderer: uiComponentSectionRenderer,
   uiTabsAddTabItem: uiTabsAddTabItem,

@@ -1,11 +1,11 @@
-import getCompareIsShopwareVersion from './compare-version';
+import getCompareIsAllinpanelVersion from './compare-version';
 
 type Comparator = '=' | '!=' | '<' | '>' | '<=' | '>=';
 
-describe('getCompareShopwareVersion', () => {
+describe('getCompareAllinpanelVersion', () => {
   const mock = (version: string) => () => Promise.resolve(version);
 
-  describe('It works with shopware versions and semver versions', () => {
+  describe('It works with allinpanel versions and semver versions', () => {
     it.each<[boolean, string, Comparator, string]>([
       [true, '6.6.8.2', '=', '6.6.8.2'],
       [true, '6.6.8.2', '=', '6.8.2'],
@@ -16,10 +16,10 @@ describe('getCompareShopwareVersion', () => {
       [false, '6.6.8.2', '=', '6.9.2'],
       [false, '6.8.2', '=', '6.6.9.2'],
       [false, '6.8.2', '=', '6.9.2'],
-    ])("returns %s for '%s %s %s'", async (exptectedResult, shopwareVersion, comparator, comparedVersion) => {
-      const compareIsShopwareVersion = getCompareIsShopwareVersion(mock(shopwareVersion));
+    ])("returns %s for '%s %s %s'", async (exptectedResult, allinpanelVersion, comparator, comparedVersion) => {
+      const compareIsAllinpanelVersion = getCompareIsAllinpanelVersion(mock(allinpanelVersion));
 
-      expect(await compareIsShopwareVersion(comparator, comparedVersion)).toBe(exptectedResult)
+      expect(await compareIsAllinpanelVersion(comparator, comparedVersion)).toBe(exptectedResult)
     });
   });
 
@@ -58,10 +58,10 @@ describe('getCompareShopwareVersion', () => {
       [true, '6.7.0.0-alpha', '=', '6.7.0.0-alpha'],
       [true, '6.7.0.0-alpha', '<', '6.7.0.0-beta'],
       [true, '6.7.0.0-beta', '>', '6.7.0.0-alpha'],
-    ])("returns %s for '%s %s %s'", async (exptectedResult, shopwareVersion, comparator, comparedVersion) => {
-      const compareIsShopwareVersion = getCompareIsShopwareVersion(mock(shopwareVersion));
+    ])("returns %s for '%s %s %s'", async (exptectedResult, allinpanelVersion, comparator, comparedVersion) => {
+      const compareIsAllinpanelVersion = getCompareIsAllinpanelVersion(mock(allinpanelVersion));
 
-      expect(await compareIsShopwareVersion(comparator, comparedVersion)).toBe(exptectedResult)
+      expect(await compareIsAllinpanelVersion(comparator, comparedVersion)).toBe(exptectedResult)
     });
   });
 });

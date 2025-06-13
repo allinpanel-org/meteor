@@ -1,3 +1,3 @@
-import meteorPrettierConfig from "@shopware-ag/meteor-prettier-config";
+import meteorPrettierConfig from "@allinpanel-ag/meteor-prettier-config";
 
 export default meteorPrettierConfig;
