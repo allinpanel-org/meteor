@@ -41,16 +41,6 @@ export type contextLocale = {
 }
 
 /**
- * Get the system currency
- */
-export type contextCurrency = {
-  responseType: {
-    systemCurrencyISOCode: string,
-    systemCurrencyId: string,
-  },
-}
-
-/**
  * Get the current Allinpanel version
  */
 export type contextAllinpanelVersion = {
