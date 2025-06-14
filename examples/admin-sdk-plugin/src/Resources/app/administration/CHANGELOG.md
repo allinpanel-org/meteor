@@ -1,5 +1,13 @@
 # administration
 
+## 1.0.26
+
+### Patch Changes
+
+- Updated dependencies
+  - @allinpanel-ag/meteor-admin-sdk@6.1.1
+  - @allinpanel-ag/meteor-component-library@4.13.1
+
 ## 1.0.25
 
 ### Patch Changes

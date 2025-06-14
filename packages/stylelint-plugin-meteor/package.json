@@ -1,6 +1,6 @@
 {
   "name": "@allinpanel-ag/stylelint-plugin-meteor",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:allinpanel-org/meteor.git"

@@ -1,5 +1,11 @@
 # CHANGELOG.md
 
+## 5.5.1
+
+### Patch Changes
+
+- version
+
 ## 5.5.0
 
 ### Minor Changes

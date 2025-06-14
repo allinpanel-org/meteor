@@ -1,6 +1,6 @@
 {
   "name": "@allinpanel-ag/meteor-icon-kit",
-  "version": "5.5.0",
+  "version": "5.5.1",
   "description": "An icon library and toolkit that follows a minimal, yet highly expressive style perfectly aligned with AllinPanel's product language",
   "keywords": [
     "svg",

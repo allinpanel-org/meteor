@@ -1,5 +1,15 @@
 # Changelog
 
+## 4.13.1
+
+### Patch Changes
+
+- version
+- Updated dependencies
+  - @allinpanel-ag/meteor-admin-sdk@6.1.1
+  - @allinpanel-ag/meteor-icon-kit@5.5.1
+  - @allinpanel-ag/meteor-tokens@1.1.1
+
 ## 4.13.0
 
 ### Minor Changes

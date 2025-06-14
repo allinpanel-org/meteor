@@ -1,5 +1,11 @@
 # @allinpanel-ag/meteor-tokens
 
+## 1.1.1
+
+### Patch Changes
+
+- version
+
 ## 1.1.0
 
 ### Minor Changes

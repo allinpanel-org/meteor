@@ -1,5 +1,11 @@
 # Changelog
 
+## 6.1.1
+
+### Patch Changes
+
+- version
+
 ## 6.1.0
 
 ### Minor Changes
