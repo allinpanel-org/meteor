@@ -6,7 +6,6 @@ export const subscribeLanguage = createSubscriber('contextLanguage');
 export const getEnvironment = createSender('contextEnvironment', {});
 export const getLocale = createSender('contextLocale', {});
 export const subscribeLocale = createSubscriber('contextLocale');
-export const getCurrency = createSender('contextCurrency', {});
 export const getAllinpanelVersion = createSender('contextAllinpanelVersion', {});
 export const compareIsAllinpanelVersion = getCompareIsAllinpanelVersion(getAllinpanelVersion);
 export const getUserInformation = createSender('contextUserInformation', {});
