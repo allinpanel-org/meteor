@@ -12,7 +12,6 @@ export const getUserInformation = createSender('contextUserInformation', {});
 export const getUserTimezone = createSender('contextUserTimezone', {});
 export const getAppInformation = createSender('contextAppInformation', {});
 export const getModuleInformation = createSender('contextModuleInformation', {});
-export const getShopId = createSender('contextShopId', {});
 
 /**
  * Get the current content language
