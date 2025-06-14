@@ -165,8 +165,6 @@ jobs:
     outputs:
       first-version: ${{ steps.versions.outputs.first-version }}
       latest-version: ${{ steps.versions.outputs.latest-version }}
-      lts-first-version: ${{ steps.versions.outputs.lts-first-version }}
-      lts-latest-version: ${{ steps.versions.outputs.lts-latest-version }}
     steps:
       - name: Generate versions
         id: versions
