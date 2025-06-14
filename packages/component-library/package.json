@@ -115,7 +115,7 @@
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-storybook": "^0.11.3",
     "eslint-plugin-vitest": "^0.5.4",
-    "eslint-plugin-vue": "^9.32.0",
+    "eslint-plugin-vue": "^10.2.0",
     "flush-promises": "^1.0.2",
     "globals": "^16.0.0",
     "http-server": "^14.1.1",
