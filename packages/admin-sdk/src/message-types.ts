@@ -41,7 +41,7 @@ import type {
   repositoryDelete,
   repositoryCreate,
 } from './data/repository';
-import type { iapCheckout } from './iap';
+
 
 /**
  * Contains all allinpanel send types.
@@ -103,7 +103,6 @@ export interface AllinpanelMessageTypes {
   datasetSubscribeRegistration: datasetSubscribeRegistration,
   datasetUpdate: datasetUpdate,
   datasetGet: datasetGet,
-  iapCheckout: iapCheckout,
   __function__: __function__,
   __registerWindow__: __registerWindow__,
   _multiply: _multiply,
