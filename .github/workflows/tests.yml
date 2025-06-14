@@ -23,11 +23,11 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.head_ref }}
-        if: ${{ github.event.pull_request.head.repo.full_name == 'allinpanel-org/meteor' }}
+        if: ${{ github.event.pull_request.head.repo.full_name == 'allincart-org/meteor' }}
 
       - name: Checkout
         uses: actions/checkout@v4
-        if: ${{ github.event.pull_request.head.repo.full_name != 'allinpanel-org/meteor' }}
+        if: ${{ github.event.pull_request.head.repo.full_name != 'allincart-org/meteor' }}
 
       - uses: pnpm/action-setup@v3
         with:
@@ -100,12 +100,12 @@ jobs:
 
       - uses: pnpm/action-setup@v3
         with:
-          version: 10
+          version: 9
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: "20"
           cache: "pnpm"
           cache-dependency-path: "**/pnpm-lock.yaml"
 
@@ -113,7 +113,7 @@ jobs:
         run: pnpm install --frozen-lockfile --prefer-offline
 
       - name: madge
-        run: pnpm --filter @allinpanel-ag/meteor-admin-sdk run circular-dependencies
+        run: pnpm --filter @allincart-ag/meteor-admin-sdk run circular-dependencies
 
   playwright-run:
     name: Playwright Integration Tests
@@ -165,7 +165,9 @@ jobs:
     outputs:
       first-version: ${{ steps.versions.outputs.first-version }}
       latest-version: ${{ steps.versions.outputs.latest-version }}
+      lts-first-version: ${{ steps.versions.outputs.lts-first-version }}
+      lts-latest-version: ${{ steps.versions.outputs.lts-latest-version }}
     steps:
       - name: Generate versions
         id: versions
-        uses: allinpanel-org/github-actions/versions@main
+        uses: allincart-org/github-actions/versions@main
