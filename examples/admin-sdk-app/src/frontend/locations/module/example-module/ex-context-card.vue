@@ -12,10 +12,7 @@
       <SwButton @click="getCurrentLocale">
         Get current locale
       </SwButton>
-      <SwButton @click="getCurrentCurrency">
-        Get current currency
-      </SwButton>
-      <SwButton @click="getCurrentShopwareVersion">
+      <SwButton @click="getCurrentAllinpanelVersion">
         Get current Shopware version
       </SwButton>
       <SwButton @click="getCurrentAppInformation">
@@ -73,26 +70,13 @@ async function getCurrentLocale() {
   })
 }
 
-async function getCurrentCurrency() {
-  const currentCurrency = await context.getCurrency();
+async function getCurrentAllinpanelVersion() {
+  const currentAllinpanelVersion = await context.getAllinpanelVersion();
 
   notification.dispatch({
-    title: 'Current currency',
+    title: 'Current AllinPanel version',
     message: `
-    Your system currency ID is "${currentCurrency.systemCurrencyId}".
-    <br />
-    The ISO Code for this currency is "${currentCurrency.systemCurrencyISOCode}".
-    `
-  })
-}
-
-async function getCurrentShopwareVersion() {
-  const currentShopwareVersion = await context.getAllinpanelVersion();
-
-  notification.dispatch({
-    title: 'Current Shopware version',
-    message: `
-    Your current Shopware version is "${currentShopwareVersion}".
+    Your current AllinPanel version is "${currentAllinpanelVersion}".
     `
   })
 }
